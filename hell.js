@@ -33,7 +33,7 @@ const fetchCommentsByPostId = (postId) => {
     });
 };
 
-(async function () {
+(async _ => {
     try {
         const user = await fetchUserById(1);
         const posts = await fetchPostsByUserId(user.id);
